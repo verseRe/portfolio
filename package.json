@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "export": "next export",
-    "deploy": "npm run build && gh-pages -d out"
+    "deploy": "npm run build && gh-pages -d out",
+    "static": "npm run build && npx serve out"
   },
   "dependencies": {
     "next": "15.3.4",

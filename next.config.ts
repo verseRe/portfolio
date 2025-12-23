@@ -2,9 +2,10 @@
 const isProd = process.env.NODE_ENV === 'production'
 
 const nextConfig = {
-  output: 'export', // important for static export
+  output: "export",
+  trailingSlash: true,
   basePath: isProd ? '/portfolio' : '',
   assetPrefix: isProd ? '/portfolio/' : '',
-}
+};
 
-module.exports = nextConfig
+export default nextConfig;
